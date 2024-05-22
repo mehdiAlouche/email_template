@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demande</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .header {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .contact-info, .book-details {
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          demande
+        </div>
+        <p>Je vous écris pour demander un livre non disponible actuellement sur votre marketplace.</p>
+        <div class="contact-info">
+            <p>Voici mes coordonnées et les détails du livre :</p>
+            <p><strong>Nom :</strong>{name}</p>
+            <p><strong>Email :</strong> <a>{email}</a></p>
+            <p><strong>Téléphone :</strong>{phone}</p>
+        </div>
+        <div class="book-details">
+            <p><strong>Détails du livre :</strong></p>
+            <p><strong>Titre :</strong>{titre}</p>
+            <p><strong>Auteur :</strong>{author}</p>
+            <p><strong>Édition :</strong>{edition}</p>
+        </div>
+        <p>
+            Je vous serais reconnaissant(e) de bien vouloir m’aider à obtenir ce livre.
+            Veuillez me faire savoir la disponibilité et les éventuelles étapes supplémentaires requises de ma part.
+        </p>
+        <div class="footer">
+            <p>Je vous remercie de votre attention,</p>
+            <p>Cordialement,</p>
+            <p>{name}</p>
+        </div>
+    </div>
+</body>
+</html>
