@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nouvelle commande à traiter</title>
 </head>
+
 <body>
     <p>Objet : Nouvelle commande à traiter - {Numéro de commande}</p>
     <p>Bonjour {Nom du Libraire},</p>
     <p>
-        Nous avons le plaisir de vous informer qu'une nouvelle commande a été passée sur Bookmark et que l'un ou plusieurs articles relèvent de votre catalogue. Voici les détails de la commande que nous vous invitons à traiter dans les meilleurs délais :
+        Nous avons le plaisir de vous informer qu'une nouvelle commande a été passée sur Bookmark et que l'un ou
+        plusieurs articles relèvent de votre catalogue. Voici les détails de la commande que nous vous invitons à
+        traiter dans les meilleurs délais :
     </p>
     <p>
         <strong>Numéro de commande :</strong> {Numéro de commande}<br>
         <strong>Date de la commande :</strong> {Date de la commande}<br>
         <strong>Produits commandés :</strong>
     </p>
-    <ul>
-        {% for produit in ListBooks %}
-            <li>{{ produit.nom }} - Quantité : {{ produit.quantite }}</li>
-        {% endfor %}
-    </ul>
+    {listBooks}
     <p>
         <strong>Informations de livraison client :</strong><br>
         <strong>Nom du client :</strong> {Nom du Client}<br>
@@ -32,13 +32,17 @@
     </p>
     <ol>
         <li>
-            <strong>Confirmation de la commande :</strong> Veuillez confirmer la réception de cet email et le traitement de la commande dans le délai de {X heures/jours}.
+            <strong>Confirmation de la commande :</strong> Veuillez confirmer la réception de cet email et le traitement
+            de la commande dans le délai de {X heures/jours}.
         </li>
         <li>
-            <strong>Préparation de la commande :</strong> Assurez-vous que les articles sont correctement emballés et conformes à la description fournie sur le site.
+            <strong>Préparation de la commande :</strong> Assurez-vous que les articles sont correctement emballés et
+            conformes à la description fournie sur le site.
         </li>
         <li>
-            <strong>Expédition :</strong> Une fois la commande prête, merci d'utiliser notre service d'expédition partenaire [Bookmark/expédition] pour l'envoi. Le numéro de suivi doit être communiqué à {Adresse email/Plateforme} pour que nous puissions mettre à jour le client sur le statut de sa commande.
+            <strong>Expédition :</strong> Une fois la commande prête, merci d'utiliser notre service d'expédition
+            partenaire [Bookmark/expédition] pour l'envoi. Le numéro de suivi doit être communiqué à {Adresse
+            email/Plateforme} pour que nous puissions mettre à jour le client sur le statut de sa commande.
         </li>
     </ol>
     <p>
@@ -46,14 +50,18 @@
     </p>
     <ul>
         <li>
-            <strong>Date limite de traitement :</strong> La commande doit être expédiée au plus tard le {Date limite d'expédition}, pour respecter notre engagement de livraison envers le client.
+            <strong>Date limite de traitement :</strong> La commande doit être expédiée au plus tard le {Date limite
+            d'expédition}, pour respecter notre engagement de livraison envers le client.
         </li>
         <li>
-            <strong>Support :</strong> Si vous rencontrez des difficultés ou avez des questions concernant cette commande, n'hésitez pas à contacter notre équipe de support dédiée aux libraires via {Adresse email} ou par téléphone au {Numéro de téléphone}.
+            <strong>Support :</strong> Si vous rencontrez des difficultés ou avez des questions concernant cette
+            commande, n'hésitez pas à contacter notre équipe de support dédiée aux libraires via {Adresse email} ou par
+            téléphone au {Numéro de téléphone}.
         </li>
     </ul>
     <p>
-        Nous vous remercions pour votre collaboration rapide et efficace, essentielle à la satisfaction de nos clients et au succès de notre Marketplace.
+        Nous vous remercions pour votre collaboration rapide et efficace, essentielle à la satisfaction de nos clients
+        et au succès de notre Marketplace.
     </p>
     <p>
         Cordialement,<br>
@@ -62,4 +70,5 @@
         <a href="mailto:contact@bookmark.ma">contact@bookmark.ma</a>
     </p>
 </body>
+
 </html>
